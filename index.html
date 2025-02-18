@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ's Q/A</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Parkinsans:wght@300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tulpen+One&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+  <style>
+    *{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    body{
+      font-family: "Jost", serif;
+      color: white;
+      background-image: url("bg-color.jpg");
+      width: 100%;
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    .container{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 750px;
+      margin: 40px auto;
+      background-color: black;
+      border-radius: 20px;
+    }
+    .faq-container {
+      width: 700px;
+      margin: 0 auto;
+      padding-bottom: 14px;
+      font-family: "Mulish", serif;
+    }
+
+    .faq-item {
+      background-color: #1c1713;
+      border-radius: 5px;
+      margin: 12px 0;
+      padding: 12px;
+      transition: background-color 0.3s ease;
+    }
+
+    .faq-item:hover {
+      background-color: #343027;
+      color: #e7e6e6;
+    }
+
+    .faq-question {
+      font-weight: bold;
+      font-size: 18px;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    /* .faq-question:hover {
+      color: rgb(133, 133, 133);
+    } */
+
+    .faq-toggle {
+      font-size: 20px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .faq-answer {
+    line-height: 22px;
+    display: none;
+    font-size: 15px;
+    margin-top: 10px;
+    color: #e7e6e6;
+    padding-left: 10px;
+    border-left: 3px solid #bc8e4e;
+}
+
+    .faq-item.active .faq-answer {
+      display: block;
+    }
+    .head h1{
+      padding: 20px 0;
+      position: relative;
+    }
+    .head h1::after {
+    content: '';
+    background-color: white;
+    height: 1px;
+    width: 178px;
+    position: absolute;
+    top: 60px;
+    left: 3px;
+}
+.head h1::before {
+    content: '';
+    background-color: white;
+    height: 1px;
+    width: 178px;
+    position: absolute;
+    top: 64px;
+    left: 3px;
+}
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="head">
+      <h1>Crazy FAQ's</h1>
+    </div>
+  <div class="faq-container">
+    <div class="faq-item">
+      <div class="faq-question">
+        Can a novel change my life?
+        <span class="faq-toggle">+</span>
+      </div>
+      <div class="faq-answer">Absolutely! A great novel can open new worlds, challenge your thinking, and even inspire you to change your perspective or take action. It might even push you to start your own story!</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">
+        Why don’t cats like water?
+        <span class="faq-toggle">+</span>
+      </div>
+      <div class="faq-answer">Cats are mysterious creatures. It's likely because they prefer to stay dry and be the ultimate rulers of their domain.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">
+        Can I time travel?
+        <span class="faq-toggle">+</span>
+      </div>
+      <div class="faq-answer">Not quite yet, but we're working on it. For now, try living in the moment and enjoying today.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">
+        Do aliens exist?
+        <span class="faq-toggle">+</span>
+      </div>
+      <div class="faq-answer">We haven't met them yet, but the universe is vast. We wouldn't be surprised if they were out there. Just don't invite them over for dinner—yet.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">
+        Can I turn my dreams into reality… literally?
+        <span class="faq-toggle">+</span>
+      </div>
+      <div class="faq-answer">Well, if we had the technology to do that, we’d all be living in dreamland. For now, we suggest starting with a vision board.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">
+        Do plants have their own social networks?
+        <span class="faq-toggle">+</span>
+      </div>
+      <div class="faq-answer"> Absolutely! Through their underground root systems, plants exchange nutrients and messages, possibly discussing which sunlight is better for selfies.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">
+        Can I make friends with my shadow?
+        <span class="faq-toggle">+</span>
+      </div>
+      <div class="faq-answer">It’s always there when you need it. So yes, it’s a loyal companion! But it’s hard to get it to go on adventures.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">
+        If I sleep on a book, will I absorb its knowledge?
+        <span class="faq-toggle">+</span>
+      </div>
+      <div class="faq-answer">Unfortunately, sleep-reading hasn’t been scientifically proven—yet. But you might have some great book-themed dreams!</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">
+        If I read a book backwards, will the story change?
+        <span class="faq-toggle">+</span>
+      </div>
+      <div class="faq-answer">In theory, the plot might get really confusing! While it’s a fun idea, it’s probably best to read books front to back—unless you enjoy puzzling over plot holes!</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">
+        If aliens visit Earth, what’s the best way to greet them?
+        <span class="faq-toggle">+</span>
+      </div>
+      <div class="faq-answer">With a cup of coffee and a “Welcome to Earth!” sign. If they’re anything like us, they might appreciate a good caffeine boost.</div>
+    </div>
+  </div>
+</div>
+
+  <script>
+    const faqItems = document.querySelectorAll('.faq-item');
+
+    faqItems.forEach(item => {
+      const toggle = item.querySelector('.faq-toggle');
+      const answer = item.querySelector('.faq-answer');
+
+      item.querySelector('.faq-question').addEventListener('click', () => {
+        const isActive = item.classList.contains('active');
+        item.classList.toggle('active');
+
+        if (isActive) {
+          toggle.textContent = '+';
+        } else {
+          toggle.textContent = '-';
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>
