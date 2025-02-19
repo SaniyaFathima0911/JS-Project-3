@@ -192,20 +192,23 @@
 
   <script>
     const faqItems = document.querySelectorAll('.faq-item');
-
+    console.log(faqItems);
+    
     faqItems.forEach(item => {
       const toggle = item.querySelector('.faq-toggle');
       const answer = item.querySelector('.faq-answer');
 
       item.querySelector('.faq-question').addEventListener('click', () => {
+        console.log('Clicked:', item);
         const isActive = item.classList.contains('active');
         item.classList.toggle('active');
-
+        console.log('Is active:', isActive);
         if (isActive) {
           toggle.textContent = '+';
         } else {
           toggle.textContent = '-';
         }
+        console.log('Toggle text:', toggle.textContent);
       });
     });
   </script>
